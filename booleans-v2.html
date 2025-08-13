@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day</title>
+</head>
+<body>
+    
+<h4>Name:</h4>
+
+<input type="text" id="inputName">
+
+<p>`
+<h4>Hour:</h4>
+<input type="text" id="inputHour"/>
+</p>
+
+<button onclick="namer();">Enter</button>
+
+<script>
+
+
+function namer() {
+
+    let varHour=document.getElementById('inputHour');
+    let hour=varHour.value;
+
+    let varName=document.getElementById('inputName');
+    let name=varName.value;
+
+    if (hour>6 && hour<12) {
+        alert(`Good Morning! ${name}`);
+    } else if (hour>13 && hour<17) {
+        alert(`Good Afternoon! ${name}`);
+    } else {
+        alert(`Good Night! ${name}`);
+    }
+    }
+
+</script>
+
+</body>
+</html>
