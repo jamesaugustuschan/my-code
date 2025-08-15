@@ -29,12 +29,14 @@ function namer() {
     let varName=document.getElementById('inputName');
     let name=varName.value;
 
-    if (hour>6 && hour<12) {
-        alert(`Good Morning! ${name}`);
-    } else if (hour>13 && hour<17) {
-        alert(`Good Afternoon! ${name}`);
+    if (hour>=6 && hour<=12) {
+        alert(`Good Morning, ${name}.`);
+    } else if (hour>=13 && hour<=17) {
+        alert(`Good Afternoon, ${name}.`);
+    } else if (hour>=18 && hour<=24) {
+        alert(`Good Night, ${name}.`);
     } else {
-        alert(`Good Night! ${name}`);
+        alert(`That is not a number, ${name}!`);
     }
     }
 
