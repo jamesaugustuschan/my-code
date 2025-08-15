@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <style>
+       body {
+            background-color: orangered;
+    }
+
+    </style>
+</head>
+<body>
+    
+<h3>Rock, Paper, Scissors!</h3>
+
+<button onclick="startGame('rock');">Rock</button>
+<button onclick="startGame('paper');">Paper</button>
+<button onclick="startGame('scissor');">Scissors</button>
+
+<script>
+
+function startGame(playerMove) {
+    let computerMove;
+    const randomGenerator=Math.random();
+
+    if (randomGenerator>0 && randomGenerator<(1/3)) {
+        computerMove='rock';
+    } else if (randomGenerator>(1/3) && randomGenerator<(2/3)) {
+        computerMove='paper';
+    } else {computerMove='scissor';}
+
+
+    let answer='';
+
+    if (playerMove==='rock') {
+        if (computerMove==='rock') {
+            answer='Tie.';
+        } else if (computerMove==='paper') {
+            answer='You Lose.'
+        } else {answer='You Win.'}
+    
+    } else if (playerMove==='paper') {
+        if (computerMove==='rock') {
+            answer='You Win.';
+        } else if (computerMove==='paper') {
+            answer='Tie.'
+        } else {answer='You Lose.'}
+    
+    } else if (playerMove='scissor') {
+        if (computerMove==='rock') {
+            answer='You Lose.';
+        } else if (computerMove==='paper') {
+            answer='You Win.'
+        } else {answer='Tie.'}
+    
+    }
+
+    alert(`You picked ${playerMove}. The computer picked ${computerMove}. ${answer} because the random number was ${randomGenerator}.`);
+
+}
+
+
+</script>
+
+
+</body>
+</html>
