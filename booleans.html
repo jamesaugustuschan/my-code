@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" id="chooseAge">
+<button onclick="age();">Click This</button>
+
+<script>
+
+function age() {
+
+    let chooseAge=document.getElementById('chooseAge');
+
+    let age= chooseAge.value;
+    if(age>17) {
+        alert('You can drive!!');
+    } else {
+        alert('Stop! You cannot drive!');
+    }
+
+}
+</script>
+
+</body>
+</html>
