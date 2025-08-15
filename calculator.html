@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h1>Calculator</h1>
+
+        <p class="displayConsole"></p>
+
+    <button onclick="
+        calculation +=1;
+        console.log(calculation);
+        displayUpdater();
+        ">1</button>
+    <button onclick="
+        calculation +=2;
+        console.log(calculation);
+        displayUpdater();
+        ">2</button>
+    <button onclick="
+        calculation +=3;
+        console.log(calculation);
+        displayUpdater();
+        ">3</button>
+    <button onclick="
+        calculation +='+';
+        console.log(calculation);
+        displayUpdater();
+        ">+</button>
+    
+
+    <p>
+        <button onclick="
+            calculation +=4;
+            console.log(calculation);
+            displayUpdater();
+        ">4</button>
+        <button onclick="
+            calculation +=5;
+            console.log(calculation);
+            displayUpdater();
+        ">5</button>
+        <button onclick="
+            calculation +=6;
+            console.log(calculation);
+            displayUpdater();
+        ">6</button>
+        <button onclick="
+            calculation +='-';
+            console.log(calculation);
+            displayUpdater();
+        ">-</button>
+    </p>
+
+        <p>
+            <button onclick="
+                calculation +=7;
+                console.log(calculation);
+                displayUpdater();
+            ">7</button>
+            <button onclick="
+                calculation +=8;
+                console.log(calculation);
+                displayUpdater();
+
+                
+            ">8</button>
+            <button onclick="
+                calculation +=9;
+                console.log(calculation);
+                displayUpdater();
+            ">9</button>
+            <button onclick="
+                calculation +='*';
+                console.log(calculation);
+                displayUpdater();
+            ">*</button>
+        </p>
+
+            <p>
+                <button onclick="
+                    calculation +=0;
+                    console.log(calculation);
+                    displayUpdater();
+                ">0</button>
+                <button onclick="
+                    calculation +='.';
+                    console.log(calculation);
+                    displayUpdater();
+                ">.</button>
+                <button onclick="
+                    calculation +='/';
+                    console.log(calculation);
+                    displayUpdater();
+                ">/</button>
+                <button onclick="
+                    calculation=eval(calculation);
+                    console.log(calculation);
+                    displayUpdater();
+                ">=</button>
+            </p>
+                <p>
+                    <button onclick="
+                        calculation ='';
+                        console.log('Cleared');
+                        displayUpdater();
+                    ">Reset</button>
+                </p>
+
+
+
+<p class="displayConsole"></p>
+
+<script src="calculator.js"></script>
+
+</body>
+</html>
