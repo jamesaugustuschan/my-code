@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #result {
+            font-size: 50px;
+            color: red;
+        }
+        
+        #coinVar {
+            font-size: 30px;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="coinFlip()">Coin Flip</button>
+
+    <p id="result"></p>
+    <p id="coinVar"></p>
+
+<script>
+function coinFlip() {
+    let coinVar=Math.random();
+    let result='';
+
+    if (coinVar < 0.5) {
+        result='Tails!'
+    } else {result='Heads!'}
+
+    document.getElementById('result').textContent=result;
+    document.getElementById('coinVar').textContent=coinVar;
+    
+    /*
+    alert(`The result was ${result} because the random number generated was ${coinVar}.`);
+    */
+}
+
+
+</script>
+
+
+</body>
+</html>
